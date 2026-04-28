@@ -39,17 +39,6 @@ If improved recommendations increase 14-day retention by +1%:
 
 ---
 
-## 📊 Dataset Overview
-
-| Property | Value |
-|---|---|
-| **Source** | [Netflix Movies & TV Shows Dataset 2025](https://github.com/pimphornman-pim/DSAssignmentDataSet) |
-| **Files** | `netflix_movies_detailed_up_to_2025.csv` + `netflix_tv_shows_detailed_up_to_2025.csv` |
-| **Total titles** | **31,918** (Movies: 15,963 · TV Shows: 15,955) |
-| **Key signals** | `genres`, `description`, `country`, `language`, `release_year`, `rating` (TMDB 0–10), `popularity`, `vote_average` |
-| **No user data** | ✅ Pure content-based — no ratings or interaction logs needed |
-
----
 
 ## 🔬 Research Hypotheses & Testing Methodology
 
@@ -231,8 +220,7 @@ netflix_recsys/
 │   ├── model.py                       ← nn.Module definitions only
 │   ├── trainer.py                     ← Training loop + triplet loss
 │   └── evaluator.py                   ← Metrics + reporting only
-└── slides/
-    └── presentation.md / .pptx        ← 8-slide business deck
+
 ```
 
 ---
@@ -346,14 +334,6 @@ sentence-transformers>=2.2.0
 tqdm>=4.65.0
 jupyter>=1.0.0
 ```
-
----
-
-## 👤 Author
-
-**Narubet** — Senior Data Scientist Assignment for CGP
-📧 narubet.in@gmail.com
-
 ---
 
 *Built with PyTorch · scikit-learn · Sentence-Transformers · FAISS*
